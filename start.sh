@@ -1,3 +1,4 @@
 modprobe v4l2_common &&
 echo "Camera enabled"
-python3 intervalometer.py &
+python3 intervalometer.py
+echo "Program started"
