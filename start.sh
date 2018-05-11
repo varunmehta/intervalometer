@@ -1,1 +1,3 @@
-modprobe v4l2_common && src/intervalometer.py &
+modprobe v4l2_common && 
+echo "Camera enabled"
+src/intervalometer.py &
