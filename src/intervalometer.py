@@ -12,7 +12,7 @@ import os
 # Purpose of this program is to keep clicking photos,
 # till storage is full or the pi is unplugged.
 camera = PiCamera()
-FILE_PATH='/home/pi/poker'
+FILE_PATH='/data'
 
 # create dir first time
 if not os.path.exists(FILE_PATH):
