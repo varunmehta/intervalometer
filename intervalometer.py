@@ -28,11 +28,11 @@ sleep(10)
 # infinite loop to click pictures
 while True:
     file_name = int(round(time.time()))
-    print ("Clicking picture... ", file_name)
-    camera.capture(FILE_PATH , '/' , file_name , '.jpg')
-    print ("Captured, now sleeping...")
-
+    print ("Filename: " + file_name)
+    camera.capture(FILE_PATH + '/' + file_name + '.jpg')
     # click a picture every 5 seconds.
+
+    print ("Captured, now sleeping...")
     sleep(5)
 camera.stop_preview()
 print ("Program exited")
