@@ -11,7 +11,7 @@ RUN READTHEDOCS=True pip install -r /requirements.txt
 COPY . /usr/src/app
 WORKDIR /usr/src/app
 
-CMD ["bash","modprobe v4l2_common"]
+CMD ["bash","start.sh"]
 
 # main.py will run when container starts up on the device
-CMD ["python","src/intervalometer.py"]
+# CMD ["python","src/intervalometer.py"]
