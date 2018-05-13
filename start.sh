@@ -3,4 +3,4 @@ echo "Camera enabled"
 # python3 intervalometer.py
 echo "Program started"
 cd /
-python3 SimpleHttpServer 80
+python3 -m http.server 80
